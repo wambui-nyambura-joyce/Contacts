@@ -16,6 +16,8 @@ class AddContacts : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAddContactsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
         val button = findViewById<Button>(R.id.btnsave)
         button.setOnClickListener {
             val intent = Intent(this@AddContacts, MainActivity::class.java)
@@ -28,7 +30,7 @@ class AddContacts : AppCompatActivity() {
         super.onResume()
         validateSignUp()
         clearErrorOnType()
-        validateSignUp()
+//        validateSignUp()
     }
 
     fun validateSignUp() {
